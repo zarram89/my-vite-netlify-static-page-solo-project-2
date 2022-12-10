@@ -1,0 +1,165 @@
+/* Variables */
+
+:root {
+  --basic-brown: #23252C;
+  --bascic-black: #000000;
+  --basic-dark-black: #161619;
+  --basic-light-black: #1A1B21;
+  --basic-gray: #DCDCDC;
+  --basic-light-gray: #F5F5F5;
+  --basic-dark-gray: #918E9B;
+  --basic-dark: #374151;
+  --basic-orange: #F3BF99;
+  --basic-white: #FFFFFF;
+}
+
+/* Global */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: var(--basic-gray);
+  background-color: var(--basic-brown);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 247px;
+  margin: 0 auto;
+  padding-top: 21px;
+}
+
+/* Grid */
+
+.page-body {
+  display: grid;
+  place-items: center;
+}
+
+/* Card */
+
+.card {
+  max-width: 317px;
+  background-color: var(--basic-light-black);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.main-img {
+  width: 317px;
+  height: 317px;
+}
+
+.main-name {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6px;
+}
+
+.main-career {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--basic-orange);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 9px;
+}
+
+.main-site-link {
+  display: block;
+  color: var(--basic-light-gray);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.main-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 9px;
+  margin-bottom: 32px;
+}
+
+.main-email::before {
+  content: "";
+  width: 13px;
+  height: 10px;
+  background-image: url("./public/img/email.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-right: 10px;
+}
+
+.main-subtitle {
+  color: var(--basic-light-gray);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.main-text {
+  margin: 0;
+  padding: 0;
+}
+
+.main-text + .main-subtitle {
+  margin-top: 20px;
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: var(--basic-dark-black);
+  margin-top: 30px;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 20px 48px;
+  display: flex;
+  justify-content: space-between;
+}
